@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    @apply text-white bg-black font-sans;
+  }
+
+  body {
+    @apply min-w-[320px] min-h-screen relative m-0;
+    overflow: hidden;
+  }
+
+  #root {
+    @apply min-h-screen;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  canvas {
+    display: none !important;
+  }
+}
